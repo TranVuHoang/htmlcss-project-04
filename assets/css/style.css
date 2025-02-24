@@ -116,7 +116,7 @@ button {
 
 .navbar__link:hover,
 .header-action__signin:hover {
-  text-shadow: 1px 0 0 currentColor;
+  text-shadow: 1px 0 2px currentColor;
   color: #000958;
 }
 
@@ -543,6 +543,144 @@ button {
   background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
   box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
 }
+/*------------------------------------------------
+# section styling
+------------------------------------------------*/
+.feature {
+  padding: 77px 0;
+}
+
+.feature__body {
+  display: flex;
+  gap: 78px;
+}
+
+.feature__media {
+  width: 500px;
+  height: 570.583px;
+  position: relative;
+}
+
+.feature__img-main {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 458px;
+  height: 500px;
+  border-radius: 18px;
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+  box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.feature__decor {
+  position: absolute;
+}
+
+.feature__decor--1 {
+  top: 0;
+  right: 55px;
+}
+
+.feature__decor--2 {
+  top: 49px;
+  right: 21px;
+}
+
+.feature__decor--3 {
+  top: 284px;
+  right: 9px;
+}
+
+.feature__decor--4 {
+  top: 352px;
+  right: 61px;
+}
+.feature__decor--5 {
+  bottom: 0;
+  right: 0;
+}
+.feature__decor--6 {
+  top: 28.5px;
+  right: 105.16px;
+}
+
+.feature__content {
+  padding: 52px 0px 60px;
+}
+
+.feature__heading {
+  width: 543px;
+}
+
+.feature__desc {
+  width: 511px;
+}
+
+.feature__row {
+  margin-top: 41px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 49px;
+  border-bottom: 2px solid rgb(255, 91, 46, 0.07);
+}
+
+.feature__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.feature__item:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -2px 0 #ff5b2e;
+}
+
+.feature__heading3 {
+  padding: 14px 0 14px;
+  color: #48496a;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+
+.feature__desc3 {
+  margin-top: 36px;
+  color: #656689;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  max-width: 391px;
+}
+
+.feature__more {
+  margin-top: 32px;
+  --more-width: 86px;
+  color: #ff5d31;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start; /* Căn theo nội dung */
+}
+
+.feature__more-text {
+  min-width: var(--more-width);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+}
+
+.feature__more-line {
+  display: block;
+  width: 100%;
+  max-width: var(--more-width);
+  height: 1.5px;
+  background: #ff5d31;
+}
+
 /*------------------------------------------------
 # section styling
 ------------------------------------------------*/
