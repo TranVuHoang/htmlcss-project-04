@@ -1,0 +1,136 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/*------------------------------------------------
+# common
+------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 130px;
+  line-height: 56px;
+  text-align: center;
+  border-radius: 99px;
+  border: 1px solid rgb(0, 9, 88, 0.7);
+}
+/*------------------------------------------------
+# header section styling
+------------------------------------------------*/
+.header {
+  padding-top: 26px;
+}
+
+.header-fixed {
+  position: sticky;
+  top: -26px;
+}
+
+.header__body {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 229px; */
+}
+
+.navbar__list {
+  min-width: 491px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.navbar__link,
+.header-action__signin {
+  padding: 18px 0;
+  color: #5e6085;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.navbar__link:hover,
+.header-action__signin:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #000958;
+}
+
+.header-action__signin:hover {
+  text-decoration: underline;
+}
+
+.header__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.header-action__signup {
+  color: #000958;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+
+.header-action__signup {
+  --height: 48px;
+
+  min-width: 117px;
+  line-height: var(--height);
+}
+
+.header-action__signup:hover {
+  background: #000958;
+  color: #fff;
+}
+
+/*------------------------------------------------
+# section styling
+------------------------------------------------*/
+
+/*------------------------------------------------
+# section styling
+------------------------------------------------*/
