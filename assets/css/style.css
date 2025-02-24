@@ -19,6 +19,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background: #fffaf5;
 }
 
 /*------------------------------------------------
@@ -31,6 +32,10 @@ h4,
 h5,
 h6 {
   font-family: "Sora", sans-serif;
+}
+
+img {
+  object-fit: cover;
 }
 
 input,
@@ -59,7 +64,9 @@ button {
 # header section styling
 ------------------------------------------------*/
 .header {
+  background: #fffaf5;
   padding-top: 26px;
+  z-index: 1000;
 }
 
 .header-fixed {
@@ -128,8 +135,230 @@ button {
 }
 
 /*------------------------------------------------
-# section styling
+# hero section styling
 ------------------------------------------------*/
+.hero {
+  padding: 53px 0;
+  margin-top: 37px;
+}
+
+.hero__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120.51px;
+}
+
+.hero__media {
+  display: flex;
+  position: relative;
+}
+
+.hero__img-wrap {
+  position: relative;
+}
+
+.hero__img-wrap {
+  width: 388px;
+  height: 488px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 16px;
+  background: #fe997b;
+  border: 3px solid #fff;
+}
+
+.hero__img,
+.hero__img-small {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.hero__decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero--decor1 {
+  top: 16.66px;
+  right: -43px;
+}
+
+.hero--decor2 {
+  bottom: 9.53px;
+  left: -57.99px;
+}
+
+.hero__img-wrap-small {
+  align-self: flex-end;
+  width: 186px;
+  height: 244px;
+  margin: 0 0 -58px -24px;
+  border: 2px solid #fcdddf;
+}
+
+.hero__summary {
+  align-self: flex-end;
+  margin-bottom: -94px;
+  margin-right: -129px;
+  width: 250px;
+  height: 156px;
+  padding: 18px 14px;
+
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+  position: absolute;
+  left: 129px;
+  bottom: 0;
+}
+
+.hero__item {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__item-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fec23f;
+}
+
+.hero__item-image--2 {
+  background: #c6e2fa;
+}
+
+.hero__item-thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 21px 0px #f7a70c52;
+}
+
+.hero__item-thumb--2 {
+  box-shadow: 0px 4px 21px 0px #6597c2;
+}
+
+.hero__item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__item-title {
+  color: #181e52;
+  font-family: Sora;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+
+.hero__item-skeleton {
+  border-radius: 10px;
+  opacity: 0.08;
+  background: #000958;
+  height: 4px;
+  margin-left: 1px;
+}
+
+.hero__skeleton--long {
+  width: 118px;
+  margin-top: 7px;
+}
+
+.hero__skeleton--short {
+  width: 39px;
+  margin-top: 6px;
+}
+
+.hero__skeleton-hr {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 19.6px;
+  width: 222px;
+  height: 2px;
+  background: #f2f2f2;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero__title {
+  color: #000958;
+  font-size: 6.6rem;
+  font-weight: 800;
+  line-height: 1.15; /* 115.152% */
+}
+
+.hero__desc {
+  margin-top: 24px;
+  color: #656689;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.86; /* 187.5% */
+}
+
+.hero__row-cta {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero__cta {
+  display: flex;
+  align-items: center;
+}
+.hero__book-link {
+  color: #fff;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  min-width: 189px;
+  line-height: 60px;
+  border: none;
+  border-radius: 31px;
+  background: #ff5b2e;
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  padding: 0 10px;
+}
+
+.hero__icon-right {
+  width: 8px;
+  height: 8px;
+}
+
+.hero__img-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.hero__cta-link {
+  color: #000958;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10px;
+}
+
+.hero__cta-link:hover {
+  text-shadow: 1px 0 0 currentColor;
+  text-decoration: underline;
+}
 
 /*------------------------------------------------
 # section styling
