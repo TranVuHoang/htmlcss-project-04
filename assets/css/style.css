@@ -60,6 +60,22 @@ button {
   border-radius: 99px;
   border: 1px solid rgb(0, 9, 88, 0.7);
 }
+
+.section-heading {
+  color: #000958;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.19; /* 119.231% */
+}
+
+.section-desc {
+  margin-top: 24px;
+  color: #656689;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.86; /* 187.5% */
+}
 /*------------------------------------------------
 # header section styling
 ------------------------------------------------*/
@@ -138,7 +154,7 @@ button {
 # hero section styling
 ------------------------------------------------*/
 .hero {
-  padding: 53px 0;
+  padding: 53px 0 171px;
   margin-top: 37px;
 }
 
@@ -307,7 +323,7 @@ button {
   margin-top: 38px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 24px;
 }
 
 .hero__cta {
@@ -343,8 +359,9 @@ button {
   justify-content: center;
   width: 20px;
   height: 20px;
-  background: #fff;
   border-radius: 50%;
+  background: #fffaf5;
+  box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
 }
 
 .hero__cta-link {
@@ -352,7 +369,7 @@ button {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .hero__cta-link:hover {
@@ -360,6 +377,172 @@ button {
   text-decoration: underline;
 }
 
+/*------------------------------------------------
+# about section styling
+------------------------------------------------*/
+.about {
+  padding: 53px 0;
+}
+
+.about__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__content {
+  padding: 69px 0 77px;
+}
+
+.about__label {
+  color: #5e6085;
+  font-family: Sora, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+
+.about__heading {
+  margin-top: 15px;
+  width: 446px;
+}
+
+.about__desc {
+  width: 431px;
+}
+
+.about__check__list {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  gap: 34px 36px; /*row, column gap (trên dưới, trái phải)*/
+}
+
+.about__check-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+  color: #48496a;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+}
+
+.about__check-item::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ff5d31;
+  box-shadow: 0 4px 15px -3px rgba(255, 93, 49, 0.69);
+}
+
+.about__check-item::after {
+  content: url(../images/svg/icon-check.svg);
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+.about__media {
+  position: relative;
+}
+
+.about__card {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  width: 138.952px;
+  height: 179.19px;
+}
+
+.about__card-info {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 136px;
+  height: 156px;
+  padding: 30px 26px;
+  gap: 14px;
+  text-align: center;
+  border-radius: 10px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about__card-heading {
+  color: #fff;
+  font-family: Sora;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1; /* 100% */
+}
+
+.about__card-desc {
+  color: #c6f4f9;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.43; /* 142.857% */
+}
+
+.about__card-img {
+  position: absolute;
+  z-index: 1;
+  width: 34.935px;
+  height: 37.623px;
+  top: 0;
+  right: 0;
+}
+
+.about__card-icon {
+  width: 141%;
+  height: 141%;
+  object-fit: cover;
+  fill: linear-gradient(183deg, #ffa68c 44.03%, #ff926a 124.6%);
+  filter: drop-shadow(5px 9px 24px rgba(255, 158, 126, 0.08));
+}
+
+.about__image {
+  position: relative;
+  margin-left: 92px;
+  width: 494px;
+  height: 559px;
+  border-radius: 16px;
+  /* 2background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%); */
+}
+
+.about__img {
+  width: 450px;
+  height: 602px;
+  margin-left: 21px;
+  padding-bottom: 43px;
+}
+
+.about__img-decor {
+  position: absolute;
+  width: 133.63px;
+  height: 94.766px;
+  top: 157px;
+  left: 411px;
+}
+
+.about__bg-decor {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  width: 494px;
+  height: 336px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+}
 /*------------------------------------------------
 # section styling
 ------------------------------------------------*/
